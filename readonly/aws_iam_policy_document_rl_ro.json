@@ -1,0 +1,48 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+                  "Action": [
+                    "apigateway:GET",
+                    "cognito-identity:ListTagsForResource",
+                    "cognito-idp:ListTagsForResource",
+                    "ec2:DescribeTags",
+                    "ecr:DescribeImages",
+                    "ecr:GetLifecyclePolicy",
+                    "directconnect:DescribeDirectConnectGateways",
+                    "elasticbeanstalk:ListTagsForResource",
+                    "elasticfilesystem:DescribeTags",
+                    "elasticache:ListTagsForResource",
+                    "es:ListTags",
+                    "glacier:GetVaultLock",
+                    "glacier:ListTagsForVault",
+                    "glue:GetSecurityConfigurations",
+                    "logs:GetLogEvents",
+                    "mq:listBrokers",
+                    "mq:describeBroker",
+                    "organizations:DescribeOrganization",
+                    "ram:GetResourceShares",
+                    "secretsmanager:DescribeSecret",
+                    "ssm:GetParameters",
+                    "ssm:ListTagsForResource",
+                    "sqs:SendMessage",
+                    "elasticmapreduce:ListSecurityConfigurations",
+                    "sns:listSubscriptions",
+                    "sns:ListTagsForResource",
+                    "wafv2:ListResourcesForWebACL",
+                    "wafv2:ListWebACLs",
+                    "waf-regional:ListResourcesForWebACL",
+                    "waf-regional:ListWebACLs",
+                    "sagemaker:DescribeNotebookInstance",
+                    "sagemaker:ListNotebookInstances",
+                    "sagemaker:ListTags",
+                    "dms:DescribeReplicationInstances",
+                    "dms:ListTagsForResource",
+                    "guardduty:List*,",
+                    "guardduty:Get*"
+                  ],
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+   }
